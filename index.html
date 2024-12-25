@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Tour and Travel Agency Website</title>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- header section starts -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravelgo</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i> <!-- Updated icon for close button -->
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login Now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Register now</a></p>
+        </form>
+    </div>
+    <!-- home section start-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+        <a href="#packages" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="pictures/video1.mp4"></span>
+        <span class="vid-btn" data-src="pictures/video2.mp4"></span>
+        <span class="vid-btn" data-src="pictures/video3.mp4"></span>
+        <span class="vid-btn" data-src="pictures/video4.mp4"></span>
+        <span class="vid-btn" data-src="pictures/video5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="pictures/video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+     <!-- home section ends-->
+     <!-- book section starts-->
+     <section class="book" id="book">
+        <h1 class="heading">
+          <span>b</span>
+          <span>o</span>
+          <span>o</span>
+          <span>k</span>
+          <span class="space"></span>
+          <span>n</span>
+          <span>o</span>
+          <span>w</span>
+        </h1>
+      
+        <div class="row">
+          <div class="image">
+            <img src="pictures/book-img.svg" alt="">
+          </div>
+      
+          <form action="">
+            <div class="inputBox">
+              <h3>where to</h3>
+              <input type="text" list="places" placeholder="place name">
+              <datalist id="places">
+                <option value="Kadremukh">
+                <option value="Agumbe">
+                <option value="Abbey Falls">
+                <option value="Karwar">
+                <option value="Badami">
+                <option value="Kodachadri Trek">
+              </datalist>
+            </div>
+      
+            <div class="inputBox">
+              <h3>how many</h3>
+              <input type="number" placeholder="number of guests">
+            </div>
+      
+            <div class="inputBox">
+              <h3>arrivals</h3>
+              <input type="date" id="arrival-date">
+            </div>
+      
+            <div class="inputBox">
+              <h3>leaving</h3>
+              <input type="date" id="leaving-date">
+            </div>
+      
+            <input type="submit" class="btn" value="book now">
+          </form>
+        </div>
+      </section>
+      
+
+    <!-- book section end-->
+    <!-- packages section satrts-->
+     <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>u</span>
+            <span>n</span>
+            <span>d</span>
+            <span>e</span>
+            <span>r</span>
+            <span>a</span>
+            <span>t</span>
+            <span>e</span>
+            <span>d</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="pictures/p-1.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Kadremukh </h3>
+                    <p>Kudremukh is a scenic hill station located in the Chikmagalur district of Karnataka, India. Known for its lush green landscapes, mist-covered hills, and rich biodiversity, it is part of the Western Ghats and is named after a peak that resembles a horse's face </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 10000.00 <span>INR 12000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/p-2.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Agumbe </h3>
+                    <p>Agumbe is a scenic village in Karnataka's Western Ghats, known for its heavy rainfall, lush rainforests, and breathtaking sunsets. It is a biodiversity hotspot and home to the rare King Cobra, attracting nature lovers and trekkers.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 19000.00 <span>INR 22000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/p-3.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Abbey Falls </h3>
+                    <p>Abbey Falls is a beautiful waterfall near Madikeri in Karnataka’s Coorg district. Surrounded by coffee and spice plantations, it cascades from a height of 70 feet, offering a scenic view, especially during the monsoon. A hanging bridge nearby provides a great vantage point, making it a popular spot for nature lovers and photographers.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 5000.00 <span>INR 10000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Karwar </h3>
+                    <p>Karwar is a coastal town in Karnataka, known for its pristine beaches, scenic landscapes, and rich cultural heritage. It lies along the Arabian Sea and is a gateway to Goa. Karwar is famous for its tranquil Devbagh Beach, seafood, and the nearby Kali River, making it a popular destination for nature and water sports enthusiasts.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 7000.00 <span>INR 10000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/p-5.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Badami </h3>
+                    <p>Badami is a historic town in Karnataka, known for its stunning rock-cut cave temples and red sandstone cliffs. Once the capital of the Chalukya dynasty, it features ancient carvings, temples, and a picturesque reservoir, making it a significant site for history and architecture enthusiasts.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 8000.00 <span>INR 11000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/p-6.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Kodachadri Trek </h3>
+                    <p>Kodachadri Trek is a popular trekking route in Karnataka, leading to the Kodachadri peak in the Western Ghats. Known for its lush forests, waterfalls, and breathtaking views, the trek takes adventurers through dense vegetation and steep trails, culminating in stunning vistas from the summit. The peak is also home to the ancient Mookambika Temple, adding spiritual significance to the journey.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> INR 10000.00 <span>INR 12000.00</span> </div>
+                    <a href="#book" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+
+     </section>
+    <!-- packages section end-->
+    <!-- services section starts-->
+     <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>Discover the best places to stay without breaking the bank! Our curated list of affordable hotels offers comfort, convenience, and great value for money.</p>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks </h3>
+                <p>Discover local street food, fine dining, and hidden culinary gems for a delightful taste experience.</p>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety giude</h3>
+                <p>Navigate your journey securely with essential safety tips, dos and don’ts, and emergency contacts.</p>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Explore detailed itineraries, destination guides, and iconic landmarks for a perfect global adventure.</p>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Explore high-speed travel options that redefine convenience and efficiency. From high-speed trains to quick air routes, get where you need to be faster than ever while enjoying the journey.</p>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>Embark on thrilling adventures like trekking, zip-lining, water rafting, and more. Whether you crave adrenaline or serene exploration, we’ve got experiences tailored for every adventurer.</p>
+            </div>
+            
+        </div>
+
+     </section>
+
+    <!-- services section ends-->
+    <!-- gallery section starts-->
+     <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="pictures/g-1.jpg" alt="">
+                <div class="content">
+                    <h3>Virupaksha Temple</h3>
+                    <p>Virupaksha Temple in Hampi is a historic temple dedicated to Lord Shiva, known for its intricate architecture and cultural significance.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-2.jpg" alt="">
+                <div class="content">
+                    <h3>The Stone Chariot </h3>
+                    <p>
+                        The Stone Chariot in Hampi is an iconic granite structure resembling a chariot, located in the Vittala Temple complex, known for its detailed carvings and architectural brilliance.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-3.jpg" alt="">
+                <div class="content">
+                    <h3>River Tungabhadra</h3>
+                    <p>River Tungabhadra is a major river in southern India, flowing through Karnataka and Andhra Pradesh, known for its historical and cultural significance.</p>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-4.jpg" alt="">
+                <div class="content">
+                    <h3>Jog Falls</h3>
+                    <p>Jog Falls is India's second-highest plunge waterfall, located in Karnataka, known for its breathtaking four cascades: Raja, Rani, Roarer, and Rocket.</p>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-5.jpg" alt="">
+                <div class="content">
+                    <h3>Mysore Palace</h3>
+                    <p>Mysore Palace is a grand royal residence in Karnataka, known for its stunning architecture and cultural significance.</p>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-6.jpg" alt="">
+                <div class="content">
+                    <h3>Bangalore Palace</h3>
+                    <p>Bangalore Palace is a historic palace in Bengaluru, inspired by Tudor architecture, known for its elegant interiors and royal heritage.</p>
+                   
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-7.jpg" alt="">
+                <div class="content">
+                    <h3>Someshwar Beach</h3>
+                    <p>Someshwar Beach is a serene beach near Mangaluru, known for its golden sands, rocky shores, and the ancient Someshwara Temple.</p>
+                   
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>Bharachukki Waterfalls</h3>
+                    <p>Bharachukki Waterfalls is a stunning segmented waterfall in Karnataka’s Chamarajanagar district, known for its wide cascade and scenic beauty.</p>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="pictures/g-9.jpg" alt="">
+                <div class="content">
+                    <h3>Chennakesava Temple</h3>
+                    <p>Chennakesava Temple is a historic Hoysala-era temple in Karnataka, dedicated to Lord Vishnu, renowned for its intricate carvings and architectural beauty.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+     </section>
+    <!-- gallery section ends-->
+    <!-- review section starts-->
+     <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="review-slider">
+
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="box">
+                        <img src="pictures/r-1.jpg" alt="">
+                        <h3>Aarav</h3>
+                        <p>" I had an unforgettable experince exploring kudremukha and the kodachadri treak. the safety guide helped me prepare for the treak, ensuring a smooth adventure.I stayed at a cozy, affordable hotel in Karwar, where the food recommendations were delightful.Someshwar Beach was a perfect spot to relax, and the website’s detailed travel information made it all seamless!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="pictures/r-2.jpg" alt="">
+                        <h3>Priya</h3>
+                        <p>"Visiting the Stone Chariot in Hampi and Virupaksha Temple was like stepping back in time. I loved the affordable hotel options near River Tungabhadra and the tips for local food were spot on. The safety guide ensured I could enjoy the vibrant culture stress-free. Jog Falls and Bharachukki Waterfalls were breathtaking and added thrill to the adventure."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="pictures/r-3.jpg" alt="">
+                        <h3>Rohan</h3>
+                        <p>"Exploring Mysore Palace and Bangalore Palace was a dream come true. The detailed guide on affordable stays in the area was incredibly helpful. Abbey Falls and Agumbe were mesmerizing, especially with the food and drink spots recommended on the site. The safety tips made me feel at ease traveling through these picturesque locations."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="pictures/r-4.jpg" alt="">
+                        <h3>Ananya</h3>
+                        <p>"The vibrant landscapes of Badami and Jog Falls left me in awe. The website’s affordable hotel recommendations ensured a comfortable stay. The safety guide was indispensable for my visit to the Virupaksha Temple and River Tungabhadra. Kodachadri Trek added a dose of adventure, while the local cuisine options in Karwar were a delightful surprise!"</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- review section ends-->
+    <!-- contact section starts-->
+     <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="pictures/contact.svg" alt="">
+            </div>
+       
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+     </section>
+
+    <!-- contact section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custtom js file link-->
+    <script src="./script.js"></script>
+</body>
+</html>
