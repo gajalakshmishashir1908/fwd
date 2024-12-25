@@ -1,0 +1,161 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-color: black; /* Black background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styles */
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+}
+
+.orange-letter {
+  color: orange;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Space between the image and the content */
+  margin-top: 100px; /* To avoid overlap with the header */
+  flex-wrap: wrap;
+}
+
+/* Image Box */
+.image-box img {
+  max-width: 500px;  /* Increased image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Content Box */
+.content {
+  text-align: center;
+  max-width: 400px; /* Width of the Sign In/Sign Up section */
+}
+
+/* Quote */
+.quote {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 14px 28px; /* Larger button size */
+  border: 2px solid orange;
+  border-radius: 5px;
+  font-size: 1.2em;   /* Larger font size for buttons */
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Popup Styles */
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align all content within the popup */
+}
+
+.popup-content h2 {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;       /* Ensure the form takes full width of the popup content */
+  align-items: center; /* Center-align form elements horizontally */
+}
+
+.popup-content input {
+  width: 80%;        /* Reduce input width for centered look */
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center; /* Center-align text within input fields */
+}
+
+.popup-content button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  width: 80%;        /* Match button width with input fields */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.popup-content button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: grey;
+  cursor: pointer;
+}
